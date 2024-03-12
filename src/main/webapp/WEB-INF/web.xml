@@ -1,0 +1,41 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+<context-param>
+<param-name>cgst</param-name>
+<param-value>20.0</param-value>
+</context-param>
+
+
+
+
+<servlet>
+<init-param>
+<param-name>sgstofstatea</param-name>
+<param-value>10.0</param-value>
+</init-param>
+<servlet-name>a</servlet-name>
+<servlet-class>gst.StateAServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>a</servlet-name>
+<url-pattern>/statea</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<init-param>
+<param-name>sgstofstateb</param-name>
+<param-value>15.0</param-value>
+</init-param>
+<servlet-name>b</servlet-name>
+<servlet-class>gst.StateBServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>b</servlet-name>
+<url-pattern>/stateb</url-pattern>
+</servlet-mapping>
+
+</web-app>
